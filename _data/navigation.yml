@@ -8,3 +8,33 @@ main:
     url: /resume/
   - title: Contact
     url: /contact/
+
+side:
+  - title: Centrifugal Nuclear Thermal Rocket
+    url: /projects/#centrifugal-nuclear-thermal-rocket
+    children:
+      - title: Thermodynamics
+        url: /projects/#thermodynamics
+      - title: Mechanical Design
+        url: projects/#mechanical-design
+  - title: Detecting Crack Growth
+    url: /projects/#detecting-crack-growth
+    children:
+      - title: Details
+        url: /projects/#details
+      - title: Github
+        url: projects/#github
+  - title: HANI Non-Invasive Temperature Sensor Development
+    url: /projects/#hani-non-invasive-temperature-sensor-development
+  - title: Preventing Defects in Metal 3D Printing
+    url: /projects/#preventing-defects-in-metal-3d-printing
+    children:
+      - title: Poster
+        url: /projects/#poster
+  - title: Wankel-Engine Air Compressor
+    url: /projects/#wankel-engine-air-compressor
+    children:
+      - title: Design
+        url: /projects/#design
+      - title: Prototype & Testing
+        url: /projects/#prototype--testing

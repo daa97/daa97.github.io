@@ -50,6 +50,7 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
+  font-size: $type-size-4;
   // z-index: 20;
 }
 
@@ -67,7 +68,6 @@
 
   .site-nav {
     margin-left: 0;
-
     @include breakpoint($small) {
       float: right;
     }
