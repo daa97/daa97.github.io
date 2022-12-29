@@ -19,30 +19,30 @@ I am in charge of analyzing and developing the thermodynamic cycle of the CNTR s
 I have helped lead this project's efforts in structural analysis and component design. I designed a spring-loaded piston to attach the ceramic walls of the fuel element while allowing for differential thermal expansion. This design process included analyzing structural loads and buckling mechanisms, finding off-the-shelf components. I built a simulation of the nonlinear vibration damping this mechanism provides, and used this to iterate the mechanism design. 
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style> model-viewer#cfe {width: 100%; height: 100px;}</style>
-<model-viewer id="cfe"  alt="CFE" src="/assets/CFE.glb" shadow-intensity="1" orientation="90deg 180deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%"></model-viewer>
+<style> model-viewer#cfe {width: 100%; height: 300px;}</style>
+<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 180deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%"></model-viewer>
 
 ## Detecting Crack Growth with Acoustic Emissions
 **2022 | *MEM T680 Class Project in Partnership with Drexel TAMG***
 
 This project was submitted for a course on machine learning and data analysis. It consists of a python framework to read and organize waveform data from a vibration sensor used during mechanical testing, as well as use machine learning in the form of an convolutional neural network to highlight complex patterns which are relevant to material damage and crack propagation. 
 
-#### Details
-![flowchart](/assets/flowchart.png){: width="100%" }
+#### Workflow
+![flowchart](/assets/crack-growth/flowchart.png){: width="100%" }
 
 Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) provided waveform data which was recorded across two sensors and four aluminum specimens, which was pre-processed into discrete high-amplitude 'hits'.
 
-![duration](/assets/duration.png){: width="48%" }
-![entropy](/assets/entropy.png){: width="48%" }
+![duration](/assets/crack-growth/duration.png){: width="48%" }
+![entropy](/assets/crack-growth/entropy.png){: width="48%" }
 
 #### Github
-This project can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
+This code for this project and further details can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
 
 
 ## HANI Non-Invasive Temperature Sensor Development
 **2020-2022 | *New Product for Omega Engineering***
 
-I worked extensively upon firmware and hardware developments directly before and after the release of a non-invasive clamp-on temperature sensor known an [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). Some of my work focused on determining the heat transfer of different operating conditions and to improve the HANI's accuracy and robustness. This involved a combination of theoretical modeling and empirical verification. 
+At Omega Engineering, I worked extensively upon firmware and hardware developments directly before and after the release of a non-invasive clamp-on temperature sensor known an [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). Some of my work focused on determining the heat transfer of different operating conditions and to improve the HANI's accuracy and robustness. This involved a combination of theoretical modeling and empirical verification. 
 
 I conducted tests of the device's performance to allow expanding to new configurations and operating environments and wrote correspond test reports. This involved managing large datasets, and I developed an Excel framework using macros to automate much of the data aggregation and processing.  I also tested and evaluated the performance of prospective components and worked with vendors to ensure our specifications were met. 
 
@@ -53,7 +53,7 @@ I conducted tests of the device's performance to allow expanding to new configur
 Over summer 2019, I was employed by Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) to help develop a workflow for metal additive manufacturing to prevent the formation of hotspots which reduce part quality. This involved determining the impact of various techniques through manufacturing process simulations for a handful of parts, and combining these with mechanical loading simulations. 
 
 #### Poster
-Below is a poster summarizing my work, which I presented at Drexel's STAR Summer Showcase.
+Below is a poster summarizing  my work, which I presented at Drexel's STAR Summer Showcase.
 
 ![STAR Poster](/assets/STAR.png)
 
@@ -80,13 +80,13 @@ The compressor was designed to allow most custom components to be made with a CN
   </select>
 </div>
 <style> model-viewer#wankel {width: 100%; height: 450px;}</style>
-<model-viewer id="wankel" camera-controls touch-action="pan-y" interaction-prompt="none" src="/assets/wankel5.glb" ar alt="A 3D model of a wankel-engine-style compressor" min-camera-orbit="auto auto 5%">
+<model-viewer id="wankel" camera-controls touch-action="pan-y" interaction-prompt="none" src="/assets/wankel/wankel.glb" ar alt="A 3D model of a wankel-engine-style compressor" min-camera-orbit="auto auto 5%">
 </model-viewer>
 <script src="/wankel_model.js"></script>
 
 #### Prototype & Testing
 An early design of the compressor was built with a 3D printed rotor and housing. Due to the nature of 3D-printed materials, this prototype leaked significantly but was still able to deliver 14.4 L/min flowrate and reach 70 kPa pressure. 
 
-![wankel-render](/assets/wankel.gif){: width="37.3%" }
-![wankel-prototype-1](/assets/proto1.jpg){: width="30%" }
-![wankel-prototype-2](/assets/proto2.jpg){: width="30%"}
+![wankel-render](/assets/wankel/wankel.gif){: width="37.3%" }
+![wankel-prototype-1](/assets/wankel/proto1.jpg){: width="30%" }
+![wankel-prototype-2](/assets/wankel/proto2.jpg){: width="30%"}
