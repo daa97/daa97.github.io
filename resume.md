@@ -3,11 +3,17 @@ title: Resume
 permalink: /resume/
 layout: single
 
-# <iframe src="/assets/David_Austin_Resume.pdf" width="1275" height="1650"></iframe>
+# <object data="/assets/David_Austin_Resume.pdf" width="100%" height="129.4%" type='application/pdf'></object>
 ---
-[Download ![](/assets/download.svg)](/resume.pdf)
 
-<object data="/assets/David_Austin_Resume.pdf" width="1275" height="1650" type='application/pdf'></object>
+
+
+[resume](/resume.htm)
+
+[<i class="fas fa-download" aria-hidden="true"></i> Download](/assets/David_Austin_Resume.pdf)
+
+<iframe src="/assets/David_Austin_Resume.pdf" width="100%" height="700"></iframe>
+
 
 
 

@@ -11,6 +11,7 @@ main:
 
 side:
   - title: Centrifugal Nuclear Thermal Rocket
+    text: a project
     url: /projects/#centrifugal-nuclear-thermal-rocket
     children:
       - title: Thermodynamics
@@ -20,8 +21,8 @@ side:
   - title: Detecting Crack Growth
     url: /projects/#detecting-crack-growth
     children:
-      - title: Details
-        url: /projects/#details
+      - title: Workflow
+        url: /projects/#workflow
       - title: Github
         url: projects/#github
   - title: HANI Non-Invasive Temperature Sensor Development

@@ -3,7 +3,7 @@ title: Projects
 permalink: /projects/
 layout: single
 sidebar:
-  nav: "side"
+  nav: side
 ---
 Below are a few of the larger projects I have worked on over the past several years. I am not able to share samples from my work at Omega Engineering, but I hope to give an idea of my capabilities.
 
@@ -28,7 +28,7 @@ I have helped lead this project's efforts in structural analysis and component d
 This project was submitted for a course on machine learning and data analysis. It consists of a python framework to read and organize waveform data from a vibration sensor used during mechanical testing, as well as use machine learning in the form of an convolutional neural network to highlight complex patterns which are relevant to material damage and crack propagation. 
 
 #### Workflow
-![flowchart](/assets/crack-growth/flowchart.png){: width="100%" }
+![flowchart](/assets/crack-growth/flowchart.svg){: width="100%" }
 
 Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) provided waveform data which was recorded across two sensors and four aluminum specimens, which was pre-processed into discrete high-amplitude 'hits'.
 
@@ -55,7 +55,7 @@ Over summer 2019, I was employed by Drexel [Theoretical and Applied Mechanics Gr
 #### Poster
 Below is a poster summarizing  my work, which I presented at Drexel's STAR Summer Showcase.
 
-![STAR Poster](/assets/STAR.png)
+![STAR Poster](/assets/star-poster.png)
 
 ## Wankel-Engine Air Compressor
 **2019 | *Drexel Freshman Design Project***
@@ -85,7 +85,7 @@ The compressor was designed to allow most custom components to be made with a CN
 <script src="/wankel_model.js"></script>
 
 #### Prototype & Testing
-An early design of the compressor was built with a 3D printed rotor and housing. Due to the nature of 3D-printed materials, this prototype leaked significantly but was still able to deliver 14.4 L/min flowrate and reach 70 kPa pressure. 
+Early in the development of the compressor, we made a <$30 prototype to test our concept using mostly 3D printed parts. By driving the compressor with an external hand drill, we found it was able to deliver 14.5 L/min flowrate and reach 70 kPa pressure. These results implied some air leakage but were quite promising given the prototype materials and small form factor.
 
 ![wankel-render](/assets/wankel/wankel.gif){: width="37.3%" }
 ![wankel-prototype-1](/assets/wankel/proto1.jpg){: width="30%" }
