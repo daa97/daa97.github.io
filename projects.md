@@ -5,22 +5,35 @@ layout: single
 sidebar:
   nav: side
 ---
-Below are a few of the larger projects I have worked on over the past several years. I am not able to share samples from my work at Omega Engineering, but I hope to give an idea of my capabilities.
 
 ## Centrifugal Nuclear Thermal Rocket
-**2022-2023 | *Drexel Senior Design Project in Partnership with NASA***
+**2022-2023 | *Drexel Senior Design Project in Partnership with NASA MSFC***
 
-During this academic year, I am working on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to spin a tube of liquid uranium at over 4000 Kelvin while hydrogen is bubbled inwards from the outer walls. The planned non-nuclear prototype will test the turbine and mechanical design at a reduced temperature.
+Over this academic year, I am working on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to rapidly spin a tube of molten uranium at over 4000 Kelvin while hydrogen is bubbled inwards from the ceramic walls. The planned non-nuclear prototype will be used to test the turbine and mechanical performance at a reduced temperature. This prototype will be mostly machined from aluminum, with an additively manufactured nickel-alloy turbine and SiC ceramic inner walls.
 
-#### Thermodynamics
-I am in charge of analyzing and developing the thermodynamic cycle of the CNTR system. I built a python tool to retrieve, calculate, and index data on hydrogen properties to aid in thermodynamic modeling and turbine design. I used this tool to simulate the expected thermodynamic cycle and determined operating conditions for various components. 
+
+####  Thermodynamics
+For this project, I built a thermodynamic fluids model interface in Python which works with various other tools to retrieve and calculate fluid properties. I designed this system to be flexible so that various data sources could be used across different operating conditions and materials. Using this interface, I modeled the power requirements to rotate the system due to turbulent annular flow, bearing losses, and transfer of rotational inertia at the system's inlet. This fluids model also served as the backbone for the design and characterization of the fuel element's turbine. Much of this work can be found on the project's [Github repository.](https://github.com/daa97/CFE)
 
 #### Mechanical Design
-I have helped lead this project's efforts in structural analysis and component design. I designed a spring-loaded piston to attach the ceramic walls of the fuel element while allowing for differential thermal expansion. This design process included analyzing structural loads and buckling mechanisms, finding off-the-shelf components. I built a simulation of the nonlinear vibration damping this mechanism provides, and used this to iterate the mechanism design. 
+Component design has been the most significant part of my work on this project due to having to balance many competing design requirements. I helped to develop each component, often using ASME design standards and simulation tools within Ansys and Solidworks. I worked extensively on the CAD models and drawings for a number of custom parts, and I serve as the team lead on tolerancing and GD&T.
+I also created and manage an exhaustive BOM to track all of the system components and costs.
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style> model-viewer#cfe {width: 100%; height: 300px;}</style>
-<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 180deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%"></model-viewer>
+<style> model-viewer#cfe {width: 100%; height: 400px;}</style>
+<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 0deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%"></model-viewer>
+<script src="/cfe_model.js"></script>
+
+#### Published Work
+As part of this project, I co-authored a paper which will be presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR . For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
+<iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
+      
+
+
+Below is a poster I helped write discussing this project's goals and status as of Winter 2023.
+
+![CNTR Poster](/assets/cfe/cntr-poster.png)
+
 
 ## Detecting Crack Growth with Acoustic Emissions
 **2022 | *MEM T680 Class Project in Partnership with Drexel TAMG***
@@ -85,7 +98,7 @@ The compressor was designed to allow most custom components to be made with a CN
 <script src="/wankel_model.js"></script>
 
 #### Prototype & Testing
-Early in the development of the compressor, we made a <$30 prototype to test our concept using mostly 3D printed parts. By driving the compressor with an external hand drill, we found it was able to deliver 14.5 L/min flowrate and reach 70 kPa pressure. These results implied some air leakage but were quite promising given the prototype materials and small form factor.
+Early in the development of the compressor, we made a few inexpensive prototypes to test our concept using mostly 3D printed parts. By driving the compressor with an external hand drill, we found it was able to deliver 14.5 L/min flowrate and reach 70 kPa pressure. These results implied some air leakage but were quite promising given the prototype materials and small form factor.
 
 ![wankel-render](/assets/wankel/wankel.gif){: width="37.3%" }
 ![wankel-prototype-1](/assets/wankel/proto1.jpg){: width="30%" }

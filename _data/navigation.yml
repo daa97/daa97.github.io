@@ -11,13 +11,14 @@ main:
 
 side:
   - title: Centrifugal Nuclear Thermal Rocket
-    text: a project
     url: /projects/#centrifugal-nuclear-thermal-rocket
     children:
       - title: Thermodynamics
         url: /projects/#thermodynamics
       - title: Mechanical Design
         url: projects/#mechanical-design
+      - title: Published Work
+        url: projects/#published-work
   - title: Detecting Crack Growth
     url: /projects/#detecting-crack-growth
     children:
