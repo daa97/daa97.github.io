@@ -27,7 +27,7 @@ domain: daa97.github.io       # if you want to force HTTPS, specify the domain w
 url: https://daa97.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 repository: daa97/daa97.github.io
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+# remote_theme: "mmistakes/minimal-mistakes"
 # theme: minimal-mistakes-jekyll
 
 
