@@ -24,10 +24,8 @@ side:
     children:
       - title: Workflow
         url: /projects/#workflow
-      - title: Github
-        url: projects/#github
-  - title: HANI Non-Invasive Temperature Sensor Development
-    url: /projects/#hani-non-invasive-temperature-sensor-development
+  - title: HANI Non-Invasive Temperature Sensor
+    url: /projects/#hani-non-invasive-temperature-sensor
   - title: Preventing Defects in Metal 3D Printing
     url: /projects/#preventing-defects-in-metal-3d-printing
     children:
