@@ -1,6 +1,6 @@
 ---
 layout: home
-title: About Me
+title: 
 ---
 ![image](/assets/david.jpg){: width="250" }
 
