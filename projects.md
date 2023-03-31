@@ -11,21 +11,21 @@ sidebar:
 
 Over this academic year, I am working on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to rapidly spin a tube of molten uranium at over 4000 Kelvin while hydrogen is bubbled inwards from the ceramic walls. The planned non-nuclear prototype will be used to test the turbine and mechanical performance at a reduced temperature. This prototype will be mostly machined from aluminum, with an additively manufactured nickel-alloy turbine and SiC ceramic inner walls.
 
-####  Thermodynamics
-Early on in this project, I built a thermodynamic fluids model interface in Python which works with various other tools to retrieve and calculate fluid properties. I designed this system to be flexible so that various data sources could be used across different operating conditions and materials. Using this interface, I modeled the power requirements to rotate the system due to turbulent annular flow, bearing losses, and transfer of rotational inertia at the system's inlet. This fluids model also served as the backbone for the design and characterization of the fuel element's turbine. Much of this work can be found on the project's [Github repository.](https://github.com/daa97/CFE)
+#####  Thermodynamics
+Early on in this project, I built a thermodynamic fluids model interface in Python which works with various other tools to retrieve and calculate fluid properties. I designed this system to be flexible so that various data sources could be used across different operating conditions and materials. Using this interface, I modeled the power requirements to rotate the system due to turbulent annular flow, bearing losses, and transfer of rotational inertia at the system's inlet. This fluids model also served as the backbone for the design and characterization of the fuel element's turbine. Much of this work can be found on the project's [Github repository](https://github.com/daa97/CFE).
 
-#### Mechanical Design
-Component design has been the most significant part of my work on this project due to having to balance many competing design requirements. I helped to develop each component using ASME design standards, and I ran vibrational, structural, and fluid dynamic simulations within Ansys to validate this geometry. I helped create CAD models and drawings for a number of custom parts, and I serve as the team lead on tolerancing and GD&T. 
+##### Mechanical Design
+Component design has been the most significant part of my work on this project due to having to balance many competing design requirements. I helped to develop each component using ASME design standards, and I ran vibrational, structural, and fluid dynamic simulations within Ansys to validate this geometry. I created CAD models and mechanical drawings for a number of custom parts, and I serve as the team lead on GD&T. 
 
 I created and currently manage an exhaustive BOM to track all of the project components and costs for the final prototype fuel element. During development, I constructed a preliminary plastic prototype fuel element and designed and ran an experiment using high-speed video to precisely determine frictional bearing losses. 
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style> model-viewer#cfe {width: 100%; height: 400px;}</style>
-<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 0deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%"></model-viewer>
-<script src="/cfe_model.js"></script>
+<style> model-viewer#cfe {width: 100%; height: 400px; background-color: #fff;}</style>
+<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 0deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%" poster="/assets/cfe/cfe-model.webp"></model-viewer>
+<script src="/assets/cfe/cfe_model.js"></script>
 
-#### Published Work
-As part of this project, I co-authored a paper which will be presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR . For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
+##### Published Work
+As part of this project, I co-authored a paper which will be presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR. For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
 <iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
 <b> </b>
 
@@ -36,9 +36,9 @@ Below is a poster I helped write summarizing this project's goals and status as 
 ## Detecting Crack Growth with Acoustic Emissions
 **2022 | *MEM T680 Class Project in Partnership with Drexel TAMG***
 
-This project was submitted for a course on machine learning and data analysis. It consists of a pPython framework to read and organize waveform data from a vibration sensor used during mechanical testing, as well as use machine learning in the form of an convolutional neural network to highlight complex patterns which are relevant to material damage and crack propagation. Code for this project and further details can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
+This project was submitted for a course on machine learning and data analysis. It consists of a Python framework to read and organize waveform data from a vibration sensor used during mechanical testing, as well as use machine learning in the form of an convolutional neural network to highlight complex patterns which are relevant to material damage and crack propagation. Code for this project and further details can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
 
-#### Workflow
+##### Workflow
 ![flowchart](/assets/crack-growth/flowchart.svg){: width="100%" }
 
 Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) provided waveform data which was recorded across two sensors and four aluminum specimens, which was pre-processed into discrete high-amplitude hits, and these were processed as pictured above. Using an autoencoding convolutional neural network, I compared various existing metrics for crack growth with clustering seen in the images below.
@@ -54,14 +54,14 @@ At Omega Engineering, I worked extensively upon firmware and hardware developmen
 
 I conducted tests of the HANI's performance to allow expanding to new configurations and operating environments and wrote correspond test reports. This involved managing large datasets, and I developed an Excel framework using macros to automate data aggregation and processing.  I also tested and evaluated the performance of prospective components and worked with vendors to ensure our specifications were met. 
 
-Our patent application providing further details on the conceptual and practical application of this device is available [here.](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220260432)
+Our patent application providing further details on the conceptual and practical application of this device is publicly available [here](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220260432).
 
 ## Preventing Defects in Metal 3D Printing
 **2019 | *Research Project with Drexel TAMG***
 
 Over summer 2019, I was employed by Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) to help develop a workflow for metal additive manufacturing to prevent the formation of hotspots which reduce part quality. This involved determining the impact of various techniques through manufacturing process simulations for a handful of parts, and combining these with mechanical loading simulations. 
 
-#### Poster
+##### Poster
 Below is a poster summarizing  my work, which I presented at Drexel's STAR Summer Showcase.
 
 ![STAR Poster](/assets/star-poster.png)
@@ -69,10 +69,10 @@ Below is a poster summarizing  my work, which I presented at Drexel's STAR Summe
 ## Wankel-Engine Air Compressor
 **2019 | *Drexel Freshman Design Project***
 
-As a freshman design project, I and two other students designed a small air compressor based off of a rotary Wankel engine geometry. I was in charge of the primary mechanical design and CAD model.
+As a freshman design project, I worked with two other students to design a small air compressor based off of a rotary Wankel engine geometry. I was in charge of the primary mechanical design and CAD model.
 
-#### Design
-The compressor was designed to allow most custom components to be made with a CNC router or mill, and to use off-the-shelf components where convenient. The overall assembly measures about 4.3" x 3.5" x 3.5". An electric motor drives the central camshaft, causing the triagular rotor to compress air on one side of the chamber while drawing air into the other side. I created a numerical solver to find the optimal rotor shape for near-zero clearance volume and allow for high pressures to be reach within a single stage. The final CAD model is shown below.
+##### Design
+The compressor was designed to allow most custom components to be made with a CNC router or mill, and to use off-the-shelf components where convenient. The overall assembly measures about 4.3" x 3.5" x 3.5". An electric motor drives the central camshaft, causing the triangular rotor to compress air on one side of the chamber while drawing air into the other side. I created a numerical solver to find the optimal rotor shape for near-zero clearance volume and allow for high pressures to be reach within a single stage. The final CAD model is shown below.
 
 <div class="controls">
   <b>Motor:</b>
@@ -91,9 +91,9 @@ The compressor was designed to allow most custom components to be made with a CN
 <style> model-viewer#wankel {width: 100%; height: 450px;}</style>
 <model-viewer id="wankel" camera-controls touch-action="pan-y" interaction-prompt="none" src="/assets/wankel/wankel.glb" ar alt="A 3D model of a wankel-engine-style compressor" min-camera-orbit="auto auto 5%">
 </model-viewer>
-<script src="/wankel_model.js"></script>
+<script src="/assets/wankel/wankel_model.js"></script>
 
-#### Prototype & Testing
+##### Prototype & Testing
 Early in the development of the compressor, we made a few inexpensive prototypes to test our concept using mostly 3D printed parts. By driving the compressor with an external hand drill, we found it was able to deliver 14.5 L/min flowrate and reach 70 kPa pressure. These results implied some air leakage but were quite promising given the prototype materials and small form factor.
 
 ![wankel-render](/assets/wankel/wankel.gif){: width="37.3%" }
