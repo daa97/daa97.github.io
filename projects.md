@@ -17,12 +17,16 @@ Early on in this project, I built a thermodynamic fluids model interface in Pyth
 ##### Mechanical Design
 Component design has been the most significant part of my work on this project due to having to balance many competing design requirements. I helped to develop each component using ASME design standards, and I ran vibrational, structural, and fluid dynamic simulations within Ansys to validate this geometry. I created CAD models and mechanical drawings for a number of custom parts, and I serve as the team lead on GD&T. 
 
-I created and currently manage an exhaustive BOM to track all of the project components and costs for the final prototype fuel element. During development, I constructed a preliminary plastic prototype fuel element and designed and ran an experiment using high-speed video to precisely determine frictional bearing losses. 
-
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style> model-viewer#cfe {width: 100%; height: 400px; background-color: #fff;}</style>
-<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="90deg 0deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 90deg 50%" poster="/assets/cfe/cfe-model.webp"></model-viewer>
+<model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="270deg 270deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 70deg 50%" poster="/assets/cfe/cfe-model.webp"></model-viewer>
 <script src="/assets/cfe/cfe_model.js"></script>
+
+I created and currently manage an exhaustive BOM to track all of the project components and costs for the final prototype fuel element. During development, I constructed a preliminary plastic prototype fuel element and designed and ran an experiment using high-speed video to precisely determine frictional bearing losses.
+
+![cfe-plastic](/assets/cfe/plastic.png){: width="29%" }
+![cfe-cad](/assets/cfe/cad.png){: width="31%" }
+![cfe-turbine](/assets/cfe/turbine.png){: width="38%" }
 
 ##### Published Work
 As part of this project, I co-authored a paper which will be presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR. For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
@@ -50,11 +54,14 @@ Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) p
 ## HANI Non-Invasive Temperature Sensor
 **2020-2022 | *New Product for Omega Engineering***
 
-At Omega Engineering, I worked extensively upon firmware and hardware developments directly before and after the release of a non-invasive clamp-on temperature sensor known an [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). Some of my work focused on determining the heat transfer of different operating conditions and to improve the HANI's accuracy and robustness. This involved a combination of theoretical modeling and empirical verification.
+At Omega Engineering, I helped to develop firmware and hardware for a new patent pending non-invasive clamp-on temperature sensor known as [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). Much of my work focused on determining the heat transfer of different operating conditions to improve the HANI's accuracy and robustness. This involved a combination of theoretical modeling and empirical verification.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ilyYz7Ka0kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I conducted tests of the HANI's performance to allow expanding to new configurations and operating environments and wrote correspond test reports. This involved managing large datasets, and I developed an Excel framework using macros to automate data aggregation and processing.  I also tested and evaluated the performance of prospective components and worked with vendors to ensure our specifications were met. 
 
 Our patent application providing further details on the conceptual and practical application of this device is publicly available [here](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220260432).
+
 
 ## Preventing Defects in Metal 3D Printing
 **2019 | *Research Project with Drexel TAMG***
