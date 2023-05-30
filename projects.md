@@ -9,7 +9,7 @@ sidebar:
 ## Centrifugal Nuclear Thermal Rocket
 **2022-2023 | *Drexel Senior Design Project in Partnership with NASA MSFC***
 
-Over this academic year, I am working on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to rapidly spin a tube of molten uranium at over 4000 Kelvin while hydrogen is bubbled inwards from the ceramic walls. The planned non-nuclear prototype will be used to test the turbine and mechanical performance at a reduced temperature. This prototype will be mostly machined from aluminum, with an additively manufactured nickel-alloy turbine and SiC ceramic inner walls.
+Over this academic year, I worked on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to rapidly spin a tube of molten uranium at approximately 3700 Kelvin while hydrogen is bubbled inwards from the ceramic walls. The non-nuclear prototype was used to test the turbine and mechanical performance at a reduced temperature. This prototype is be mostly machined from aluminum, with an additively manufactured nickel-alloy turbine and silicon carbide ceramic inner walls.
 
 #####  Thermodynamics
 Early on in this project, I built a thermodynamic fluids model interface in Python which works with various other tools to retrieve and calculate fluid properties. I designed this system to be flexible so that various data sources could be used across different operating conditions and materials. Using this interface, I modeled the power requirements to rotate the system due to turbulent annular flow, bearing losses, and transfer of rotational inertia at the system's inlet. This fluids model also served as the backbone for the design and characterization of the fuel element's turbine. Much of this work can be found on the project's [Github repository](https://github.com/daa97/CFE).
@@ -22,20 +22,54 @@ Component design has been the most significant part of my work on this project d
 <model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="270deg 270deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 70deg 50%" poster="/assets/cfe/cfe-model.webp"></model-viewer>
 <script src="/assets/cfe/cfe_model.js"></script>
 
-I created and currently manage an exhaustive BOM to track all of the project components and costs for the final prototype fuel element. During development, I constructed a preliminary plastic prototype fuel element and designed and ran an experiment using high-speed video to precisely determine frictional bearing losses.
+I created and managed an exhaustive BOM to track procurement status and cost of 80+ components for the final prototype fuel element. Once assembled, I designed and conducted testing of this prototype using a high-speed camera, and analyzed the resulting data to determine turbine performance and frictional losses.
 
-![cfe-plastic](/assets/cfe/plastic.png){: width="29%" }
-![cfe-cad](/assets/cfe/cad.png){: width="31%" }
-![cfe-turbine](/assets/cfe/turbine.png){: width="38%" }
+<p style="text-align:center">
+<img src="/assets/cfe/balance.png" alt="cfe-balance">
+<i>Fixture for balancing the rotating assembly</i></p>
+
+<head>
+  <style>
+  /* {
+      box-sizing: border-box;
+  } */
+  .column {
+  float: left;
+  }
+  .left {
+  width: 38.6%;
+  }
+  .right {
+  width: 55.5%;
+  }
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  </style>
+</head>
+<body>
+  <div class="row">
+      <div class="column left" style="text-align:center">
+          <img src="/assets/cfe/prototype.png" alt="cfe-prototype">
+          <i>Full prototype</i>
+      </div>
+      <div class="column right" style="text-align:center">
+          <img src="/assets/cfe/turbine.png" alt="cfe-turbine">
+          <i>Turbine rotor and stators</i>
+      </div>
+  </div>
+</body>
 
 ##### Published Work
-As part of this project, I co-authored a paper which will be presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR. For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
+As part of this project, I co-authored a paper which was presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR. For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
 <iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
 <b> </b>
 
 Below is a poster I helped write summarizing this project's goals and status as of Winter 2023.
 
-![CNTR Poster](/assets/cfe/cntr-poster.png)
+<img src="/assets/cfe/cntr-poster.png" alt="CNTR Poster">
 
 ## Detecting Crack Growth with Acoustic Emissions
 **2022 | *MEM T680 Class Project in Partnership with Drexel TAMG***
