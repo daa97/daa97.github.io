@@ -7,34 +7,20 @@ main:
   - title: "Resume"
     url: /resume/
   - title: Contact
-    url: https://linkedin.com/in/david-a-austin/
+    url: /contact/
 
 side:
+  - title: Forced Helium Dehydrator
+    url: /projects/#forced-helium-dehydrator
+  - title: Leak Testing
+    url: /projects/#leak-testing
+  - title: HANI Non-Invasive Temperature Meter
+    url: /projects/#hani-non-invasive-temperature-meter
   - title: Centrifugal Nuclear Thermal Rocket
     url: /projects/#centrifugal-nuclear-thermal-rocket
-    children:
-      - title: Thermodynamics
-        url: /projects/#thermodynamics
-      - title: Mechanical Design
-        url: projects/#mechanical-design
-      - title: Published Work
-        url: projects/#published-work
-  - title: Detecting Crack Growth
-    url: /projects/#detecting-crack-growth
-    children:
-      - title: Workflow
-        url: /projects/#workflow
-  - title: HANI Non-Invasive Temperature Sensor
-    url: /projects/#hani-non-invasive-temperature-sensor
+  - title: Detecting Cracks with Machine Learning
+    url: /projects/#detecting-cracks-with-machine-learning
   - title: Preventing Defects in Metal 3D Printing
     url: /projects/#preventing-defects-in-metal-3d-printing
-    children:
-      - title: Poster
-        url: /projects/#poster
   - title: Wankel-Engine Air Compressor
     url: /projects/#wankel-engine-air-compressor
-    children:
-      - title: Design
-        url: /projects/#design
-      - title: Prototype & Testing
-        url: /projects/#prototype--testing

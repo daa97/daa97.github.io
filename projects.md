@@ -5,78 +5,103 @@ layout: single
 sidebar:
   nav: side
 ---
+# Forced Helium Dehydrator
+<div class="skill-tags">
+  <span class="tag">Piping Systems</span>
+  <span class="tag">Heat Exchanger Design</span>
+  <span class="tag">Control Systems</span>
+  <span class="tag">Drawing Development</span>
+  <span class="tag">Solidworks</span>
+</div>
+**2023-Present | *Ongoing Product at Holtec International*** 
 
-## Centrifugal Nuclear Thermal Rocket
-**2022-2023 | *Drexel Senior Design Project in Partnership with NASA MSFC***
+At Holtec International, I am the lead engineer for the [Forced Helium Dehydrator (FHD)](https://holtecinternational.com/products-and-services/innovative-technologies/forced-helium-dehydrator/) product line. This equipment uses a closed-loop helium circuit to dry large canisters containing spent nuclear fuel. The system contains modules to heat the helium and blow it through the canister, promoting evaporation through forced convection. The system also contains modules to cool the gas stream and filter out condensed moisture and ice.
 
-Over this academic year, I worked on a team of four to design, analyze, and prototype a fuel element for NASA's proposed Centrifugal Nuclear Thermal Rocket (CNTR). This fuel element uses a turbine to rapidly spin a tube of molten uranium at approximately 3700 Kelvin while hydrogen is bubbled inwards from the ceramic walls. The non-nuclear prototype was used to test the turbine and mechanical performance at a reduced temperature. This prototype is be mostly machined from aluminum, with an additively manufactured nickel-alloy turbine and silicon carbide ceramic inner walls.
+In order to qualify the equipment for new use cases, I have conducted transient heat-transfer modeling and an extensive physical testing program. I have also developed a new custom valve design used with the FHD and worked on upgrading the FHD's existing control systems.
+
+# Leak Testing
+<div class="skill-tags">
+  <span class="tag">Vacuum Systems</span>
+  <span class="tag">ASME B&PV Code</span>
+  <span class="tag">Drawing Development</span>
+  <span class="tag">Procedure Development</span>
+</div>
+**2023-Present | *Ongoing Project at Holtec International***
+
+At Holtec International, I lead the development of leak testing equipment and processes on the various product lines of [HI-STAR](https://holtecinternational.com/products-and-services/nuclear-fuel-and-waste-management/dry-cask-and-storage-transport/hi-star/) casks used for transport and containment of nuclear waste. My work focuses on the design of seals and tools for low- to medium-vacuum systems to allow testing packages for leaks by using mass spectrometry to detect helium.
+
+# HANI Non-Invasive Temperature Meter
+<div class="skill-tags">
+  <span class="tag">Heat Transfer Modeling</span>
+  <span class="tag">Firmware Design</span>
+  <span class="tag">Test Program Design</span>
+  <span class="tag">Data Analysis</span>
+</div>
+**2020-2022 | *New Product for Omega Engineering***
+
+At Omega Engineering, my colleagues and I invented a novel clamp-on temperature meter known as [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). This device attaches to the outside of a pipe and uses multiple sensor inputs to predict the bulk fluid temperature within the pipe.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ilyYz7Ka0kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Using both heat transfer modeling and a rigorous testing program, I developed the algorithm which the device uses to compute the pipe's internal temperature. We were granted a U.S. patent for this device ([link](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12306048)).
+
+I conducted tests of the HANI's performance across a variety of metrics and wrote test reports for individual subcomponents. This involved managing large datasets, and I developed an Excel framework using macros to automate data aggregation and processing.
+
+# Centrifugal Nuclear Thermal Rocket
+<div class="skill-tags">
+  <span class="tag">Thermodynamic Modeling</span>
+  <span class="tag">Prototyping</span>
+  <span class="tag">CFD</span>
+  <span class="tag">Python</span>
+  <span class="tag">Fluent</span>
+  <span class="tag">Ansys Mechanical</span>
+</div>
+**2022-2023 | *Senior Capstone Project in Partnership with NASA MSFC***
+
+I worked on a team to design, analyze, and prototype a fuel element for a proposed Centrifugal Nuclear Thermal Rocket (CNTR). Each of the engine's 19 fuel elements consists of a porous silicon carbide tube which is rapidly spun by a small radial turbine. Hydrogen propellant drives the turbine before passing radially inwards through the porous tube and bubbling through a layer of molten uranium which provides heat. The prototype was used to test the turbine's performance and mechanical design at a reduced temperature without the use of any uranium. 
+
+This project was awarded a second place by a panel of judges out of over one hundred teams across the College of Engineering.
+
+<img src="/assets/cfe/cntr-poster.png" alt="CNTR Poster">
 
 #####  Thermodynamics
-Early on in this project, I built a thermodynamic fluids model interface in Python which works with various other tools to retrieve and calculate fluid properties. I designed this system to be flexible so that various data sources could be used across different operating conditions and materials. Using this interface, I modeled the power requirements to rotate the system due to turbulent annular flow, bearing losses, and transfer of rotational inertia at the system's inlet. This fluids model also served as the backbone for the design and characterization of the fuel element's turbine. Much of this work can be found on the project's [Github repository](https://github.com/daa97/CFE).
+I created a model of the engine's thermodynamic cycle in Python. Due to the engine's extreme temperature range, this required creating a framework to compile several different data sources for fluid properties. I modeled the frictional losses due to turbulent flow and bearing losses.
+ This model also served as the foundation for the design and characterization of the fuel element's turbine. This work was presented at the 2023 NETS conference held by the American Nuclear Society.
+
+<iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
+<b> </b>
 
 ##### Mechanical Design
-Component design has been the most significant part of my work on this project due to having to balance many competing design requirements. I helped to develop each component using ASME design standards, and I ran vibrational, structural, and fluid dynamic simulations within Ansys to validate this geometry. I created CAD models and mechanical drawings for a number of custom parts, and I serve as the team lead on GD&T. 
+I created CAD models and mechanical drawings for the prototype assembly, using vibrational, structural, and fluid dynamics simulations within Ansys for validation. 
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style> model-viewer#cfe {width: 100%; height: 400px; background-color: #fff;}</style>
 <model-viewer id="cfe"  alt="CFE" src="/assets/cfe/cfe.glb" shadow-intensity="1" orientation="270deg 270deg 0deg" camera-controls touch-action="pan-y" min-camera-orbit="auto auto 5%" camera-orbit="0deg 70deg 50%" poster="/assets/cfe/cfe-model.webp"></model-viewer>
 <script src="/assets/cfe/cfe_model.js"></script>
 
-I created and managed an exhaustive BOM to track procurement status and cost of 80+ components for the final prototype fuel element. Once assembled, I designed and conducted testing of this prototype using a high-speed camera, and analyzed the resulting data to determine turbine performance and frictional losses.
+<div class="figure-row">
+  <figure>
+    <img src="/assets/cfe/prototype.png" alt="Complete assembly of CFE prototype">
+    <figcaption><i>Complete assembly of CFE prototype</i></figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/cfe/turbine_spin.gif" alt="Turbine rotating">
+    <figcaption><i>Turbine rotating</i></figcaption>
+  </figure>
+</div>
 
-<p style="text-align:center">
-<img src="/assets/cfe/balance.png" alt="cfe-balance">
-<i>Fixture for balancing the rotating assembly</i></p>
+I then helped assemble and test the full-scale metal prototype of a single fuel element.
 
-<head>
-  <style>
-  /* {
-      box-sizing: border-box;
-  } */
-  .column {
-  float: left;
-  }
-  .left {
-  width: 38.6%;
-  }
-  .right {
-  width: 55.5%;
-  }
-  .row:after {
-  content: "";
-  display: table;
-  clear: both;
-  }
-  </style>
-</head>
-<body>
-  <div class="row">
-      <div class="column left" style="text-align:center">
-          <img src="/assets/cfe/prototype.png" alt="cfe-prototype">
-          <i>Full prototype</i>
-      </div>
-      <div class="column right" style="text-align:center">
-          <img src="/assets/cfe/turbine.png" alt="cfe-turbine">
-          <i>Turbine rotor and stators</i>
-      </div>
-  </div>
-</body>
+# Detecting Cracks with Machine Learning
+<div class="skill-tags">
+  <span class="tag">Data Analysis</span>
+  <span class="tag">Python</span>
+  <span class="tag">Neural Networks</span>
+</div>
+**2022 | *Project for Drexel TAMG***
 
-##### Published Work
-As part of this project, I co-authored a paper which was presented at the 2023 Nuclear and Emerging Technologies for Space (NETS) conference, hosted by the American Nuclear Society. This paper covers a parametric study of the CNTR. For this paper, I was in charge of researching, modeling, and discussing different components of the turbine power requirements as well as determining the operating pressure of the turbine and developing a process to sweep and plot each system parameter.
-<iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
-<b> </b>
+I created a Python framework to read and organize waveform data from am acoustic sensor used during tensile testing of metal samples and use a convolutional neural network to highlight complex patterns that are relevant to material damage and crack propagation. 
 
-Below is a poster I helped write summarizing this project's goals and status as of Winter 2023.
-
-<img src="/assets/cfe/cntr-poster.png" alt="CNTR Poster">
-
-## Detecting Crack Growth with Acoustic Emissions
-**2022 | *MEM T680 Class Project in Partnership with Drexel TAMG***
-
-This project was submitted for a course on machine learning and data analysis. It consists of a Python framework to read and organize waveform data from a vibration sensor used during mechanical testing, as well as use machine learning in the form of an convolutional neural network to highlight complex patterns which are relevant to material damage and crack propagation. Code for this project and further details can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
-
-##### Workflow
 ![flowchart](/assets/crack-growth/flowchart.svg){: width="100%" }
 
 Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) provided waveform data which was recorded across two sensors and four aluminum specimens, which was pre-processed into discrete high-amplitude hits, and these were processed as pictured above. Using an autoencoding convolutional neural network, I compared various existing metrics for crack growth with clustering seen in the images below.
@@ -84,36 +109,34 @@ Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) p
 ![duration](/assets/crack-growth/duration.png){: width="48%" }
 ![entropy](/assets/crack-growth/entropy.png){: width="48%" }
 
+Code for this project and further details can be found on GitHub [here](https://github.com/daa97/AE-Crack-Growth).
 
-## HANI Non-Invasive Temperature Sensor
-**2020-2022 | *New Product for Omega Engineering***
-
-At Omega Engineering, I helped to develop firmware and hardware for a new patent pending non-invasive clamp-on temperature sensor known as [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). Much of my work focused on determining the heat transfer of different operating conditions to improve the HANI's accuracy and robustness. This involved a combination of theoretical modeling and empirical verification.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ilyYz7Ka0kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-I conducted tests of the HANI's performance to allow expanding to new configurations and operating environments and wrote correspond test reports. This involved managing large datasets, and I developed an Excel framework using macros to automate data aggregation and processing.  I also tested and evaluated the performance of prospective components and worked with vendors to ensure our specifications were met. 
-
-Our patent application providing further details on the conceptual and practical application of this device is publicly available [here](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220260432).
-
-
-## Preventing Defects in Metal 3D Printing
+# Preventing Defects in Metal 3D Printing
+<div class="skill-tags">
+  <span class="tag">FEA</span>
+  <span class="tag">ABAQUS</span>
+  <span class="tag">Topology Optimization</span>
+  <span class="tag">SLM/SLS Printing</span>
+</div>
 **2019 | *Research Project with Drexel TAMG***
 
-Over summer 2019, I was employed by Drexel [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/) to help develop a workflow for metal additive manufacturing to prevent the formation of hotspots which reduce part quality. This involved determining the impact of various techniques through manufacturing process simulations for a handful of parts, and combining these with mechanical loading simulations. 
-
-##### Poster
-Below is a poster summarizing  my work, which I presented at Drexel's STAR Summer Showcase.
+While part of Drexel University's [Theoretical and Applied Mechanics Group](https://tamg.mem.drexel.edu/), I helped develop a workflow for metal additive manufacturing to prevent the formation of hotspots which reduce part quality. This involved using manufacturing process simulations along with FEA stress analyses to evaluate and iteratively improve performance.
 
 ![STAR Poster](/assets/star-poster.png)
 
-## Wankel-Engine Air Compressor
-**2019 | *Drexel Freshman Design Project***
+# Wankel-Engine Air Compressor
+<div class="skill-tags">
+  <span class="tag">Fusion 360</span>
+  <span class="tag">Python</span>
+  <span class="tag">Prototyping</span>
+  <span class="tag">Manual Machining</span>
+</div>
+**2019 | *Freshman Design Project***
 
-As a freshman design project, I worked with two other students to design a small air compressor based off of a rotary Wankel engine geometry. I was in charge of the primary mechanical design and CAD model.
+As a freshman design project at Drexel University, I worked with two other students to design a small air compressor based off of a rotary Wankel engine geometry. I was in charge of the primary mechanical design and CAD model.
 
-##### Design
-The compressor was designed to allow most custom components to be made with a CNC router or mill, and to use off-the-shelf components where convenient. The overall assembly measures about 4.3" x 3.5" x 3.5". An electric motor drives the central camshaft, causing the triangular rotor to compress air on one side of the chamber while drawing air into the other side. I created a numerical solver to find the optimal rotor shape for near-zero clearance volume and allow for high pressures to be reach within a single stage. The final CAD model is shown below.
+##### Mechanical Design
+An electric motor drives the central camshaft, causing the triangular rotor to compress air on one side of the chamber while drawing air into the other side. I created a numerical solver to find the optimal rotor shape to achieve extremely high compression ratios. The final CAD model is shown below.
 
 <div class="controls">
   <b>Motor:</b>
@@ -135,8 +158,16 @@ The compressor was designed to allow most custom components to be made with a CN
 <script src="/assets/wankel/wankel_model.js"></script>
 
 ##### Prototype & Testing
-Early in the development of the compressor, we made a few inexpensive prototypes to test our concept using mostly 3D printed parts. By driving the compressor with an external hand drill, we found it was able to deliver 14.5 L/min flowrate and reach 70 kPa pressure. These results implied some air leakage but were quite promising given the prototype materials and small form factor.
+A small prototype was created out of mostly 3D-printed parts. This was driven using an external motor and successfully delivered a high airflow rate despite its small size. 
 
-![wankel-render](/assets/wankel/wankel.gif){: width="37.3%" }
-![wankel-prototype-1](/assets/wankel/proto1.jpg){: width="30%" }
-![wankel-prototype-2](/assets/wankel/proto2.jpg){: width="30%"}
+
+<div class="figure-row">
+  <figure>
+    <img src="/assets/wankel/wankel.gif" alt="Animation of compressor operation">
+    <figcaption><i>Animation of compressor operation</i></figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/wankel/proto2.jpg" alt="3D-printed prototype">
+    <figcaption><i>3D-printed prototype</i></figcaption>
+  </figure>
+</div>
