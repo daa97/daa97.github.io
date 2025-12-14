@@ -7,13 +7,13 @@ sidebar:
 ---
 # Forced Helium Dehydrator
 <div class="skill-tags">
+  <span class="tag">Technical Leadership</span>
   <span class="tag">Piping Systems</span>
   <span class="tag">Heat Exchanger Design</span>
   <span class="tag">Control Systems</span>
-  <span class="tag">Drawing Development</span>
-  <span class="tag">Solidworks</span>
+  <span class="tag">Mechanical Drawings</span>
 </div>
-**2023-Present | *Ongoing Product at Holtec International*** 
+**2023-Present | *Ongoing Product at Holtec International***
 
 At Holtec International, I am the lead engineer for the [Forced Helium Dehydrator (FHD)](https://holtecinternational.com/products-and-services/innovative-technologies/forced-helium-dehydrator/) product line. This equipment uses a closed-loop helium circuit to dry large canisters containing spent nuclear fuel. The system contains modules to heat the helium and blow it through the canister, promoting evaporation through forced convection. The system also contains modules to cool the gas stream and filter out condensed moisture and ice.
 
@@ -23,12 +23,13 @@ In order to qualify the equipment for new use cases, I have conducted transient 
 <div class="skill-tags">
   <span class="tag">Vacuum Systems</span>
   <span class="tag">ASME B&PV Code</span>
-  <span class="tag">Drawing Development</span>
+  <span class="tag">Mechanical Drawings</span>
   <span class="tag">Procedure Development</span>
+  <span class="tag">PLC Automation</span>
 </div>
 **2023-Present | *Ongoing Project at Holtec International***
 
-At Holtec International, I lead the development of leak testing equipment and processes on the various product lines of [HI-STAR](https://holtecinternational.com/products-and-services/nuclear-fuel-and-waste-management/dry-cask-and-storage-transport/hi-star/) casks used for transport and containment of nuclear waste. My work focuses on the design of seals and tools for low- to medium-vacuum systems to allow testing packages for leaks by using mass spectrometry to detect helium.
+At Holtec International, I lead the development of leak testing equipment and processes on the various product lines of [HI-STAR](https://holtecinternational.com/products-and-services/nuclear-fuel-and-waste-management/dry-cask-and-storage-transport/hi-star/) casks used for transport and containment of nuclear waste. My work focuses on the design of seals and tools for low- to medium-vacuum systems to allow testing packages for leaks by using mass spectrometry to detect helium infiltration. I am also leading an effort to automate existing testing processes in order to create large production cost savings.
 
 # HANI Non-Invasive Temperature Meter
 <div class="skill-tags">
@@ -39,7 +40,7 @@ At Holtec International, I lead the development of leak testing equipment and pr
 </div>
 **2020-2022 | *New Product for Omega Engineering***
 
-At Omega Engineering, my colleagues and I invented a novel clamp-on temperature meter known as [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). This device attaches to the outside of a pipe and uses multiple sensor inputs to predict the bulk fluid temperature within the pipe.
+At Omega Engineering, I co-invented a novel clamp-on temperature meter known as [HANI](https://landing.omega.com/hani/) ("high accuracy, non-invasive"). This device attaches to the outside of a pipe and uses multiple sensor inputs to predict the bulk fluid temperature within the pipe.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ilyYz7Ka0kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -53,7 +54,7 @@ I conducted tests of the HANI's performance across a variety of metrics and wrot
   <span class="tag">Prototyping</span>
   <span class="tag">CFD</span>
   <span class="tag">Python</span>
-  <span class="tag">Fluent</span>
+  <span class="tag">Ansys Fluent</span>
   <span class="tag">Ansys Mechanical</span>
 </div>
 **2022-2023 | *Senior Capstone Project in Partnership with NASA MSFC***
@@ -69,7 +70,6 @@ I created a model of the engine's thermodynamic cycle in Python. Due to the engi
  This model also served as the foundation for the design and characterization of the fuel element's turbine. This work was presented at the 2023 NETS conference held by the American Nuclear Society.
 
 <iframe src="/assets/cfe/nets-paper.pdf" width="100%" height="560"></iframe>
-<b> </b>
 
 ##### Mechanical Design
 I created CAD models and mechanical drawings for the prototype assembly, using vibrational, structural, and fluid dynamics simulations within Ansys for validation. 
@@ -100,7 +100,7 @@ I then helped assemble and test the full-scale metal prototype of a single fuel 
 </div>
 **2022 | *Project for Drexel TAMG***
 
-I created a Python framework to read and organize waveform data from am acoustic sensor used during tensile testing of metal samples and use a convolutional neural network to highlight complex patterns that are relevant to material damage and crack propagation. 
+I created a Python framework to read and organize waveform data from an acoustic sensor used during tensile testing of metal samples and use a convolutional neural network to highlight complex patterns that are relevant to material damage and crack propagation. 
 
 ![flowchart](/assets/crack-growth/flowchart.svg){: width="100%" }
 
